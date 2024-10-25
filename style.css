@@ -1,139 +1,142 @@
-/* Mobile styles */
+/* General Styling */
 body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
 header {
-  background-color: #ffff;
-  padding: 15px;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ddd;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-.hero {
-  background: url(herosec.jpg);
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.hero-img {
-  width: 100%;
-  height: auto;
-  display: block;
+header h2 {
+  font-size: 32px;
+  color: #e74c3c;
+}
+
+header p {
+  font-size: 16px;
+  color: #555;
 }
 
 .main-program {
-  background: url(background.jpg);
+  background-color: #f5f5f5;
 }
 
-.program-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 10px;
+.program-item img {
+  width: 50px;
 }
 
-.logo a {
-  color: #ff5722;
-  text-decoration: none;
-  font-size: 24px;
+.program-item h4 {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
-.menu-btn {
-  background: none;
+.featured-speakers .speaker-item img {
+  border-radius: 50%;
+}
+
+.speaker-item h4 {
+  font-size: 20px;
+  color: #e74c3c;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
   border: none;
-  color: #ff5722;
-  font-size: 28px;
-  cursor: pointer;
 }
 
-.mobile-nav {
-  position: fixed;
+.btn-secondary {
+  background-color: #555;
+  border: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.summit-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.summit-card .overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
+  background-color: rgba(255, 0, 0, 0.7);
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-}
-
-.mobile-nav.hidden {
-  display: none;
-}
-
-.mobile-nav .close-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 40px;
-  cursor: pointer;
-}
-
-.mobile-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mobile-nav ul li {
-  margin: 20px 0;
-}
-
-.mobile-nav ul li a {
-  color: white;
-  font-size: 24px;
-  text-decoration: none;
-}
-
-.hero {
-  background-color: #ffff;
-  color: black;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.main-program {
-  padding: 20px;
-  background-color: #333;
-}
-
-.main-program h2 {
-  text-align: center;
-  color: white;
-}
-.main-program h3 {
-  color: #ff5722;
-  margin-right: 10px;
-}
-
-.program-item {
-  background-color: rgb(89, 89, 89);
-  padding: 15px;
-  margin: 10px 0;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  color: white;
-  display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#speakers {
-  padding: 20px;
+.summit-card:hover .overlay {
+  background-color: rgba(255, 0, 0, 0.9);
 }
 
-#speakers h2 {
-  text-align: center;
-  color: #ff5722;
+.summit-card h3 {
+  font-size: 3rem;
+}
+
+.summit-card p {
+  font-size: 1.2rem;
+}
+
+.partner-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.line {
+  width: 50px;
+  height: 2px;
+  background-color: red;
+  margin: 0.5rem auto;
+}
+
+.partner-logo {
+  max-width: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0%);
+}
+
+.footer-section {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.footer-logo img {
+  max-width: 200px;
+  /* Adjust based on logo size */
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #333;
 }
