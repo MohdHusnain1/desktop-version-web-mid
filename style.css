@@ -16,11 +16,21 @@ header {
   align-items: center;
   border-bottom: 1px solid #ddd;
 }
+
+.hero {
+  background: url(herosec.jpg);
+}
+
 .hero-img {
   width: 100%;
   height: auto;
   display: block;
 }
+
+.main-program {
+  background: url(background.jpg);
+}
+
 .program-img {
   width: 100%;
   height: auto;
